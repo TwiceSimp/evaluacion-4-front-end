@@ -61,15 +61,15 @@
 }
 
 @media (max-width: 800px) {
-  .contenedor-avisos {
-    grid-template-columns: repeat(2, 1fr);
-    max-height: none;
-    overflow: visible;
+  .aviso {
+    flex-basis: calc(50% - 30px); 
+    max-width: calc(50% - 30px); 
   }
 }
 
 @media (max-width: 600px) {
-  .contenedor-avisos {
-    grid-template-columns: repeat(1, 1fr);
+  .aviso {
+    flex-basis: 50%; 
+    max-width: 50%; 
   }
 }
