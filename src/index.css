@@ -1,0 +1,75 @@
+.app {
+  text-align: left; 
+  padding: 20px;
+}
+
+.formulario-aviso {
+  margin-bottom: 20px;
+}
+
+.formulario-aviso input[type='text'] {
+  width: 15%; /* Establece el ancho al 100% para ocupar todo el espacio disponible */
+  padding: 8px; /* Aumenta el tamaño del relleno para dar más espacio a los campos de entrada */
+  margin-bottom: 10px; 
+  margin-right: 5px;
+}
+
+.contenedor-avisos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+  gap: 10px;
+  max-width: 1000px; /* Establece el ancho máximo del contenedor */
+  
+  margin-right: auto;
+}
+
+.aviso {
+  flex-basis: calc(25% - 50px); /* Establece un ancho máximo de 25% menos el espacio entre los elementos */
+  max-width: calc(30% - 30px); /* Establece un ancho máximo para cada aviso */
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 40px;
+  position: relative;
+  border: 2px solid black;
+}
+
+.aviso .encabezado {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton-eliminar {
+  background: red;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+  padding: 5px 15px;
+
+}
+
+.aviso .precio {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .contenedor-avisos {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor-avisos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
