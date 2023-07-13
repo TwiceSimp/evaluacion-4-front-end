@@ -8,8 +8,8 @@
 }
 
 .formulario-aviso input[type='text'] {
-  width: 15%; /* Establece el ancho al 100% para ocupar todo el espacio disponible */
-  padding: 8px; /* Aumenta el tamaño del relleno para dar más espacio a los campos de entrada */
+  width: 15%; 
+  padding: 8px; 
   margin-bottom: 10px; 
   margin-right: 5px;
 }
@@ -17,16 +17,16 @@
 .contenedor-avisos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+  justify-content: flex-start; 
   gap: 10px;
-  max-width: 1000px; /* Establece el ancho máximo del contenedor */
+  max-width: 1000px; 
   
   margin-right: auto;
 }
 
 .aviso {
-  flex-basis: calc(25% - 50px); /* Establece un ancho máximo de 25% menos el espacio entre los elementos */
-  max-width: calc(30% - 30px); /* Establece un ancho máximo para cada aviso */
+  flex-basis: calc(25% - 50px); 
+  max-width: calc(30% - 30px); 
   height: 200px;
   width: 200px;
   background-color: white;
